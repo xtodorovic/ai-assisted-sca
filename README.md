@@ -11,7 +11,7 @@ Bratislava
 
 ## 📚 Overview
 
-This project explores the use of Artificial Intelligence techniques, particularly deep learning models, to perform side-channel attacks on cryptographic implementations. The goal is to demonstrate how AI can enhance the efficiency and accuracy of these attacks by learning patterns from physical leakage data on power traces.
+This project uses Artificial Intelligence techniques, particularly deep learning models, to perform side-channel attacks on cryptographic implementations. The goal is to demonstrate how AI can enhance the efficiency and accuracy of these attacks by learning patterns from physical leakage data on power traces.
 
 ---
 
@@ -28,7 +28,7 @@ The model is implemented using:
 ## 🗃️ Dataset
 
 > ⚠️ The datasets are large to be included in this repository.
-To use the project, please download the dataset from [REPOSITORY]{https://github.com/XIAOLUHOU/SCA-measurements-and-analysis----Experimental-results-for-textbook/tree/main} and place the datasets in the `datasets/` folder.
+To use the project, please download the dataset from [REPOSITORY](https://github.com/XIAOLUHOU/SCA-measurements-and-analysis----Experimental-results-for-textbook/tree/main) and place the datasets in the `datasets/` folder.
 
 Datasets used:
 - random_dataset,
@@ -84,6 +84,14 @@ Then:
 ## 📦 Dependencies
 
 See `requirements.txt` for a full list of required packages.
+
+---
+
+## 📦 Table of Contents
+
+- **model/** - directory for model training and tuning
+- **research** - contains research of the trace leakeages for both AES and PRESENT
+- **utils** - contains helper functions (eg. dataset loader, computations, analasys methods...)
 
 ---
 
