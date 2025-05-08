@@ -1,0 +1,11 @@
+venv
+datasets
+material
+.env
+.ipynb_checkpoints
+*.pkl
+wandb
+__pycache__
+configs
+models
+trained
