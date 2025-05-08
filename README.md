@@ -27,7 +27,7 @@ The model is implemented using:
 
 ## 🗃️ Dataset
 
-⚠️ The datasets are too large to be included in this repository.  
+> ⚠️ The datasets are large to be included in this repository.
 To use the project, please download the dataset from [REPOSITORY]{https://github.com/XIAOLUHOU/SCA-measurements-and-analysis----Experimental-results-for-textbook/tree/main} and place the datasets in the `datasets/` folder.
 
 Datasets used:
@@ -36,6 +36,10 @@ Datasets used:
 - fixed_dataset_1,
 - fixed_dataset_2
 ---
+
+## ⚙️ Wandb Logging
+
+I've setup a logging with Wandb so the model artifacts are uploaded to it with the metrics. To use it create an **.env** file and add you API Wandb key in format: **WANDB_API_KEY=........**.
 
 ## ⚙️ Setup Instructions
 
@@ -74,14 +78,6 @@ Then:
 - Open the `.ipynb` file
 - Click the top-right corner kernel selector
 - Choose: `Python 3.x ('venv': venv)`
-
----
-
-## 🧪 Running the Notebook from Terminal (Optional)
-
-```bash
-jupyter nbconvert --to notebook --execute your_notebook.ipynb --output executed_notebook.ipynb
-```
 
 ---
 
