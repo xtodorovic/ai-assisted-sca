@@ -120,6 +120,18 @@ High-level module structure and tree outlines are in:
 - [`trained_models.txt`](tree/trained_models.txt)
 - [`tuner_search_hp.txt`](tree/tuner_search_hp.txt)
 
+---
+
+## 📁 Trained Models
+
+> ⚠️ **Note:** Trained models can be downloaded from Google Drive. (270 MB)  
+Download them from:  
+🔗 [Google Drive](https://drive.google.com/file/d/1BspBbyMxaprTVXb7TFjaTtswYAboPeYP/view?usp=sharing)
+
+To run the **key_recovery.ipynb** extract the **trained.zip** inside **model** directory. Check main project structure if there are any issues.
+
+---
+
 Project Layout:
 
 ```text
@@ -128,6 +140,8 @@ Project Layout:
 ├── datasets - Training and testing datasets
 ├── dataset - Training data with labels and POIs
 ├── model
+│   ├── trained - Trained Models
+│   ├── tunning - Output from tuner with best hyperparameters
 │   ├── key_recovery.ipynb - Notebook for evaluation of trained models and key recovery
 │   ├── train.ipynb - Notebook for model training
 │   └── tunning.ipynb - Notebook for hyperparameter search using keras tuner
