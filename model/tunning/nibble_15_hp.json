@@ -1,0 +1,11 @@
+{
+    "trace_length": 50,
+    "filters": 32,
+    "kernel_size": 5,
+    "dense_units": 32,
+    "learning_rate": 0.0001,
+    "tuner/epochs": 3,
+    "tuner/initial_epoch": 0,
+    "tuner/bracket": 2,
+    "tuner/round": 0
+}

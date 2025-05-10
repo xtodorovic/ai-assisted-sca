@@ -1,58 +1,81 @@
-
 # AI-Assisted Side-Channel Attacks
 
-**Thesis Project by Miroslav Todorović**
+**Master's Thesis Project**
 
-Master's Thesis
-Slovak Technical University, Faculty of Informatics and Information Technology
-Bratislava
+**Author:** Bc. Miroslav Todorović
 
----
+**Supervisor:** Bc. Xiaolu Hou, Ph.D.
 
-## 📚 Overview
-
-This project uses Artificial Intelligence techniques, particularly deep learning models, to perform side-channel attacks on cryptographic implementations. The goal is to demonstrate how AI can enhance the efficiency and accuracy of these attacks by learning patterns from physical leakage data on power traces.
+**Institution:** Slovak Technical University, Faculty of Informatics and Information Technology, Bratislava
 
 ---
 
-## 🧠 AI & Model Details
+## 📖 Overview
 
-The model is implemented using:
-- **TensorFlow / Keras** for the CNN architecture
-- **Scikit-learn** for preprocessing and splitting the dataset
-- **NumPy / Pandas** for data handling
-- **Matplotlib** for visualizations
-- **Wandb** for logging model stats and artifacts
+This project explores the application of **Artificial Intelligence**—particularly **Convolutional Neural Networks (CNNs)**—in conducting **Side-Channel Attacks (SCAs)** on cryptographic implementations for **PRESENT** and **AES** ciphers. The aim is to enhance key recovery through machine learning models trained on power consumption traces during encryption.
+
 ---
 
-## 🗃️ Dataset
+## 🧠 AI & Model Framework
 
-> ⚠️ The datasets are large to be included in this repository.
-To use the project, please download the dataset from [REPOSITORY](https://github.com/XIAOLUHOU/SCA-measurements-and-analysis----Experimental-results-for-textbook/tree/main) and place the datasets in the `datasets/` folder.
+Key components and libraries used:
 
-Datasets used:
-- random_dataset,
-- random_pt_dataset,
-- fixed_dataset_1,
-- fixed_dataset_2
+- `TensorFlow` / `Keras` – Model development and training (CNN architecture)
+- `Scikit-learn` – Data splitting, scaling, preprocessing
+- `NumPy`, `Pandas` – Data handling
+- `Matplotlib` – Visualization
+- `Weights & Biases (wandb)` – Experiment tracking and model artifact logging
+
 ---
 
-## ⚙️ Wandb Logging
+## 📁 Dataset
 
-I've setup a logging with Wandb so the model artifacts are uploaded to it with the metrics. To use it create an **.env** file and add you API Wandb key in format: **WANDB_API_KEY=........**.
+> ⚠️ **Note:** Datasets are large and not hosted in this repository.  
+Download them from:  
+🔗 [Dataset Repository](https://github.com/XIAOLUHOU/SCA-measurements-and-analysis----Experimental-results-for-textbook/tree/main)
+
+Expected datasets structure:
+
+```
+datasets/
+├── random_dataset/
+├── random_pt_dataset/
+├── fixed_dataset_1/
+└── fixed_dataset_2/
+```
+
+Each dataset contains traces and plaintexts. **random_dataset** also contains keys and it will serve as a training dataset.
+Other datasets are for testing, and their true key is **FEDCBA0123456789**.
+
+---
+
+## 📊 Wandb Logging
+
+This project supports Wandb for metrics tracking. To enable:
+
+1. Create a `.env` file in the root folder.
+2. Add your Wandb API key:
+
+```env
+WANDB_API_KEY=your_key_here
+```
+
+In case you don't want to track the metrics, comment out or delete the lines where wandb is used.
+
+---
 
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/xtodorovic/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/xtodorovic/ing-thesis.git
+cd ing-thesis
 ```
 
-### 2. Create and Activate Virtual Environment
+### 2. Set Up the Environment
 
-#### On macOS/Linux:
+#### On Linux/macOS:
 
 ```bash
 ./setup_env.sh
@@ -64,38 +87,78 @@ cd your-repo-name
 setup_env.bat
 ```
 
-This script will:
-- Create a Python virtual environment
-- Activate it
-- Install all required dependencies (including Jupyter support) - It may show errors if there are some, follow given instructions
+This script:
+- Creates a virtual environment
+- Installs dependencies (including Jupyter support)
+- Prepares the environment for trace-based model training
+
+Script is not perfect and may fail if you don't have python installed. I used it so I can activate the env quickly.
 
 ---
 
-### 3. Open the Notebook in VSCode
+## 🧪 Running the Jupyter Notebooks
 
-Make sure you have the **Python** and **Jupyter** extensions installed.  
-Then:
-- Open the `.ipynb` file
-- Click the top-right corner kernel selector
-- Choose: `Python 3.x ('venv': venv)`
+1. Launch VSCode.
+2. Open any `.ipynb` file (e.g., `train.ipynb`).
+3. In the top-right kernel selector, pick the Python interpreter from the `venv`.
 
 ---
 
 ## 📦 Dependencies
 
-See `requirements.txt` for a full list of required packages.
+See `requirements.txt` for all required packages.
 
 ---
 
-## 📦 Table of Contents
+## 🗂️ Project Structure
 
-- **model/** - directory for model training and tuning
-- **research** - contains research of the trace leakeages for both AES and PRESENT
-- **utils** - contains helper functions (eg. dataset loader, computations, analasys methods...)
+High-level module structure and tree outlines are in:
+
+- [`main.txt`](tree/main.txt)
+- [`datasets.txt`](tree/datasets.txt)
+- [`prepared_dataset.txt`](tree/prepared_data.txt)
+- [`trained_models.txt`](tree/trained_models.txt)
+- [`tuner_search_hp.txt`](tree/tuner_search_hp.txt)
+
+Project Layout:
+
+```text
+.
+├── datasets_URL.txt
+├── datasets - Training and testing datasets
+├── dataset - Training data with labels and POIs
+├── model
+│   ├── key_recovery.ipynb - Notebook for evaluation of trained models and key recovery
+│   ├── train.ipynb - Notebook for model training
+│   └── tunning.ipynb - Notebook for hyperparameter search using keras tuner
+├── prototype.ipynb - Initial prototype of the project
+├── README.md 
+├── requirements.txt - Dependencies list
+├── research - Directory for researching, ploting and exporting leakage POIs
+│   ├── trace_research_AES.ipynb 
+│   └── trace_research_PRESENT.ipynb
+├── setup_env.bat - File to make a virtual env, install dependencies and activate it for Windows
+├── setup_env.sh -  File to make a virtual env, install dependencies and activate it for Linux/macOS
+├── tree - Directory containing tree structure of the project
+│   ├── main.txt
+│   ├── prepared_data.txt
+│   ├── project_tree.txt
+│   └── trained_models.txt
+└── utils 
+    ├── analysis.py - Module for analysis methods
+    ├── compute.py - Module for cumpute methods such as compute SBox for PRESENT and AES 
+    ├── dataset_loader.py - Module for easier dataset loading
+    ├── __init__.py - Empty file, created so the interpreter knows to locate modules in this dir for reusability
+    ├── my_model.py - Contains 2 CNN models, one for POI training and one for Ranged POI 
+    └── tuner_models.py - Different models that were created so that the tuner may find good hyperparameters
+
+5 directories, 22 files
+
+```
 
 ---
 
-## 📄 License
+## 📜 License
 
-This code is intended for academic and research purposes only.  
-Please cite or reference appropriately if you use or modify this work.
+This project is for academic and research purposes.
+Please cite appropriately if used in publications or further work.

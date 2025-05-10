@@ -1,0 +1,16 @@
+{
+    "dropout_rate": 0.1,
+    "filters_block1": 64,
+    "kernel_block1": 3,
+    "filters_block2": 64,
+    "kernel_block2": 3,
+    "filters_block3": 192,
+    "kernel_block3": 3,
+    "dense_units": 128,
+    "learning_rate": 0.0001,
+    "tuner/epochs": 20,
+    "tuner/initial_epoch": 7,
+    "tuner/bracket": 1,
+    "tuner/round": 1,
+    "tuner/trial_id": "0019"
+}

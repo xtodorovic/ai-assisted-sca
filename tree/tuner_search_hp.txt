@@ -1,0 +1,24 @@
+model/tunning - Saved best hyperparameters from the tuner
+├── nibble_0_advanced_hp.json
+├── nibble_0_advanced_with_nibble_pois_hp.json
+├── nibble_0_blocks_hp.json
+├── nibble_0_hp.json
+├── nibble_0_simple_cropped_traces_hp.json
+├── nibble_0_simple_with_nimble_pois_hp.json
+├── nibble_10_hp.json
+├── nibble_11_hp.json
+├── nibble_12_hp.json
+├── nibble_13_hp.json
+├── nibble_14_hp.json
+├── nibble_15_hp.json
+├── nibble_1_hp.json
+├── nibble_2_hp.json
+├── nibble_3_hp.json
+├── nibble_4_hp.json
+├── nibble_5_hp.json
+├── nibble_6_hp.json
+├── nibble_7_hp.json
+├── nibble_8_hp.json
+└── nibble_9_hp.json
+
+1 directory, 21 files

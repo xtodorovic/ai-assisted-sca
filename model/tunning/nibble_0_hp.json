@@ -1,0 +1,7 @@
+{
+    "dense_units": 48,
+    "tuner/epochs": 2,
+    "tuner/initial_epoch": 0,
+    "tuner/bracket": 3,
+    "tuner/round": 0
+}

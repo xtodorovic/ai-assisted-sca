@@ -1,0 +1,9 @@
+{
+    "filters": 8,
+    "dense_units": 32,
+    "learning_rate": 0.001,
+    "tuner/epochs": 3,
+    "tuner/initial_epoch": 0,
+    "tuner/bracket": 2,
+    "tuner/round": 0
+}

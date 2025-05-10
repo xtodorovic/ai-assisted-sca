@@ -1,0 +1,19 @@
+datasets - place in project tree
+├── cache
+│   ├── fixed_dataset_1_cache.pkl
+│   ├── fixed_dataset_2_cache.pkl
+│   ├── random_dataset_cache.pkl
+│   └── random_pt_dataset_cache.pkl
+├── fixed_dataset_1
+│   ├── trace_0..4999.txt
+│   └── plaintexts.txt
+├── fixed_dataset_2
+│   ├── trace_0..4999.txt
+│   └── plaintexts.txt
+├── random_dataset - Training dataset
+│   ├── trace_0..9999.txt
+│   ├── keys.txt
+│   └── plaintexts.txt
+└── random_pt_dataset
+    ├── trace_0..4999.txt
+    └── plaintexts.txt

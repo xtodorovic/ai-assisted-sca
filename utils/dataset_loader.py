@@ -51,6 +51,7 @@ def load_dataset_files_with_cache(dataset_path, cache_path=f"../datasets/cache/d
 
     # If cache doesn't exist, load datasets from files
     print("Cache not found. Loading datasets from files...")
+    os.makedirs(os.path.dirname(cache_path), exist_ok=True)
     dataset = load_dataset_files(dataset_path)
 
     # Save to cache

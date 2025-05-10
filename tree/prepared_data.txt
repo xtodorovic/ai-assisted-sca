@@ -1,0 +1,78 @@
+dataset
+├── aes
+│   ├── byte_0_labels.npy
+│   ├── byte_10_labels.npy
+│   ├── byte_11_labels.npy
+│   ├── byte_12_labels.npy
+│   ├── byte_13_labels.npy
+│   ├── byte_14_labels.npy
+│   ├── byte_15_labels.npy
+│   ├── byte_1_labels.npy
+│   ├── byte_2_labels.npy
+│   ├── byte_3_labels.npy
+│   ├── byte_4_labels.npy
+│   ├── byte_5_labels.npy
+│   ├── byte_6_labels.npy
+│   ├── byte_7_labels.npy
+│   ├── byte_8_labels.npy
+│   ├── byte_9_labels.npy
+│   ├── pois
+│   │   ├── byte_0_pois.npy
+│   │   ├── byte_10_pois.npy
+│   │   ├── byte_11_pois.npy
+│   │   ├── byte_12_pois.npy
+│   │   ├── byte_13_pois.npy
+│   │   ├── byte_14_pois.npy
+│   │   ├── byte_15_pois.npy
+│   │   ├── byte_1_pois.npy
+│   │   ├── byte_2_pois.npy
+│   │   ├── byte_3_pois.npy
+│   │   ├── byte_4_pois.npy
+│   │   ├── byte_5_pois.npy
+│   │   ├── byte_6_pois.npy
+│   │   ├── byte_7_pois.npy
+│   │   ├── byte_8_pois.npy
+│   │   ├── byte_9_pois.npy
+│   │   └── global.npy
+│   ├── ranges.json
+│   └── sbox_outputs.npy
+└── present
+    ├── nibble_0_labels.npy
+    ├── nibble_10_labels.npy
+    ├── nibble_11_labels.npy
+    ├── nibble_12_labels.npy
+    ├── nibble_13_labels.npy
+    ├── nibble_14_labels.npy
+    ├── nibble_15_labels.npy
+    ├── nibble_1_labels.npy
+    ├── nibble_2_labels.npy
+    ├── nibble_3_labels.npy
+    ├── nibble_4_labels.npy
+    ├── nibble_5_labels.npy
+    ├── nibble_6_labels.npy
+    ├── nibble_7_labels.npy
+    ├── nibble_8_labels.npy
+    ├── nibble_9_labels.npy
+    ├── pois
+    │   ├── global.npy
+    │   ├── nibble_0_pois.npy
+    │   ├── nibble_10_pois.npy
+    │   ├── nibble_11_pois.npy
+    │   ├── nibble_12_pois.npy
+    │   ├── nibble_13_pois.npy
+    │   ├── nibble_14_pois.npy
+    │   ├── nibble_15_pois.npy
+    │   ├── nibble_1_pois.npy
+    │   ├── nibble_2_pois.npy
+    │   ├── nibble_3_pois.npy
+    │   ├── nibble_4_pois.npy
+    │   ├── nibble_5_pois.npy
+    │   ├── nibble_6_pois.npy
+    │   ├── nibble_7_pois.npy
+    │   ├── nibble_8_pois.npy
+    │   ├── nibble_9_pois.npy
+    │   └── ranges.json
+    ├── ranges.json
+    └── sbox_outputs.npy
+
+5 directories, 71 files

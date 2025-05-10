@@ -1,0 +1,30 @@
+.
+├── datasets_URL.txt
+├── datasets - Training and testing datasets
+├── dataset - Training data with labels and POIs
+├── model
+│   ├── key_recovery.ipynb - Notebook for evaluation of trained models and key recovery
+│   ├── train.ipynb - Notebook for model training
+│   └── tunning.ipynb - Notebook for hyperparameter search using keras tuner
+├── prototype.ipynb - Initial prototype of the project
+├── README.md 
+├── requirements.txt - Dependencies list
+├── research - Directory for researching, ploting and exporting leakage POIs
+│   ├── trace_research_AES.ipynb 
+│   └── trace_research_PRESENT.ipynb
+├── setup_env.bat - File to make a virtual env, install dependencies and activate it for Windows
+├── setup_env.sh -  File to make a virtual env, install dependencies and activate it for Linux/macOS
+├── tree - Directory containing tree structure of the project
+│   ├── main.txt
+│   ├── prepared_data.txt
+│   ├── project_tree.txt
+│   └── trained_models.txt
+└── utils 
+    ├── analysis.py - Module for analysis methods
+    ├── compute.py - Module for cumpute methods such as compute SBox for PRESENT and AES 
+    ├── dataset_loader.py - Module for easier dataset loading
+    ├── __init__.py - Empty file, created so the interpreter knows to locate modules in this dir for reusability
+    ├── my_model.py - Contains 2 CNN models, one for POI training and one for Ranged POI 
+    └── tuner_models.py - Different models that were created so that the tuner may find good hyperparameters
+
+5 directories, 22 files
