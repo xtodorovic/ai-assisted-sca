@@ -69,7 +69,7 @@ In case you don't want to track the metrics, comment out or delete the lines whe
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/xtodorovic/ing-thesis.git
+git clone https://github.com/xtodorovic/ai-assisted-sca.git
 cd ing-thesis
 ```
 
