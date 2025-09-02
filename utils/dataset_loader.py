@@ -6,6 +6,7 @@ import numpy as np
 def load_dataset_files(dataset_path):
     """Loads dataset files from the given path into a structured dictionary."""
     dataset = {}
+    print(f"Loading dataset from: {dataset_path}")
     keys_file = os.path.join(dataset_path, 'keys.txt')
     plaintexts_file = os.path.join(dataset_path, 'plaintexts.txt')
 

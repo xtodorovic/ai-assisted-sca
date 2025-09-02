@@ -8,3 +8,5 @@ seaborn
 wandb
 dotenv
 keras-tuner
+ipykernel
+tabulate

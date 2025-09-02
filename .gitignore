@@ -1,4 +1,5 @@
 venv
+.venv
 datasets
 material
 .env
@@ -10,3 +11,4 @@ configs
 models
 trained
 figures
+*.zip
